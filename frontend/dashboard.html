@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tasks Dashboard</title>
+</head>
+<body>
+
+<h2>My Tasks</h2>
+
+<!-- CREATE TASK -->
+<h3>Add Task</h3>
+
+<input id="title" placeholder="Task Title" />
+<br><br>
+
+<input id="description" placeholder="Task Description" />
+<br><br>
+
+<button onclick="createTask()">Add Task</button>
+
+<hr>
+
+<!-- SHOW TASKS -->
+<h3>Task List</h3>
+
+<div id="taskList"></div>
+
+<hr>
+
+<button onclick="logout()">Logout</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tasks Dashboard</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 30px;
+      background: #f4f6f8;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    input {
+      padding: 10px;
+      margin: 5px;
+      width: 250px;
+    }
+
+    button {
+      padding: 8px 12px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .btn {
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .btn-danger {
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .btn-edit {
+      background: orange;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>📌 My Tasks Dashboard</h2>
+
+<h3>Add Task</h3>
+
+<input id="title" placeholder="Task Title" />
+<input id="description" placeholder="Task Description" />
+
+<button class="btn" onclick="createTask()">Add Task</button>
+
+<hr>
+
+<h3>Task List</h3>
+<div id="taskList"></div>
+
+<br>
+<button class="btn-danger" onclick="logout()">Logout</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

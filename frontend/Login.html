@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+
+<h2>Login</h2>
+
+<input id="email" placeholder="Email" />
+<input id="password" type="password" placeholder="Password" />
+
+<button onclick="login()">Login</button>
+
+<br><br>
+<a href="register.html">Go to Register</a>
+
+<script src="script.js"></script>
+</body>
+</html>
+const BASE_URL = "http://localhost:5000/api/v1";
+
+// GET TOKEN
+function getToken() {
+  return localStorage.getItem("token");
+}
